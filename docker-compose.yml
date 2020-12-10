@@ -1,0 +1,9 @@
+version: '3.5'
+services:
+  php8:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./:/opt/project
+    working_dir: /opt/project
